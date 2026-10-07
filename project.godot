@@ -1,0 +1,28 @@
+; Engine configuration file.
+; Friendly interactive editing is available in the Godot editor.
+
+config_version=5
+
+[application]
+
+config/name="Ashen Vale"
+run/main_scene="res://scenes/login.tscn"
+config/features=PackedStringArray("4.0", "GL Compatibility")
+
+[autoload]
+
+GameSession="*res://scripts/game_session.gd"
+NetworkClient="*res://scripts/network_client.gd"
+
+[display]
+
+window/size/viewport_width=960
+window/size/viewport_height=600
+window/size/window_width_override=960
+window/size/window_height_override=600
+window/stretch/mode="canvas_items"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
