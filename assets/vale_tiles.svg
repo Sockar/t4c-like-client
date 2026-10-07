@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="32" viewBox="0 0 192 32">
+  <g>
+    <rect width="32" height="32" fill="#647b50"/>
+    <path d="M2 5l3-1m17 4 2-2M8 18l2-1m16 9 3-2M5 28l2-1" stroke="#879064" stroke-width="1"/>
+    <circle cx="15" cy="7" r="1" fill="#a59a63"/><circle cx="21" cy="20" r="1" fill="#465e40"/>
+    <path d="M0 31h32" stroke="#455d40"/>
+  </g>
+  <g transform="translate(32)">
+    <rect width="32" height="32" fill="#a58a60"/>
+    <path d="M0 5h32M0 25h32" stroke="#8c744f" stroke-width="2"/>
+    <path d="M4 13l3-1m7 5 4-1m7-7 3 1M5 29l4-1m15-9 4-1" stroke="#c2a677" stroke-width="1.5"/>
+    <circle cx="11" cy="7" r="1" fill="#786648"/><circle cx="27" cy="23" r="1" fill="#786648"/>
+  </g>
+  <g transform="translate(64)">
+    <rect width="32" height="32" fill="#547d7d"/>
+    <path d="M-2 8q6-4 12 0t12 0 12 0M-2 19q6-4 12 0t12 0 12 0M-2 29q6-4 12 0t12 0 12 0" fill="none" stroke="#83a69a" stroke-width="1.5"/>
+    <path d="M5 14h5m12 11h6" stroke="#c0bd8d" stroke-width="1"/>
+  </g>
+  <g transform="translate(96)">
+    <rect width="32" height="32" fill="#647b50"/>
+    <path d="M4 24 7 12l9-5 10 4 3 13-8 5-12-1z" fill="#777363" stroke="#454a3e" stroke-width="1.5"/>
+    <path d="m8 13 8-4 6 2-7 3-2 6-7 4m16-13 3 11-7 4" fill="none" stroke="#aaa087" stroke-width="1.5"/>
+    <path d="M0 31h32" stroke="#455d40"/>
+  </g>
+  <g transform="translate(128)">
+    <rect width="32" height="32" fill="#647b50"/>
+    <path d="M14 18h5v13h-5z" fill="#765137" stroke="#4c3b2b" stroke-width="1"/>
+    <path d="M16 1 7 5 3 14l4 8 8 3 10-3 4-9-4-8z" fill="#436443" stroke="#304d38" stroke-width="1.5"/>
+    <path d="m8 7 7-3m2 12 8-5M7 17l6 3" fill="none" stroke="#78905b" stroke-width="2"/>
+    <circle cx="11" cy="11" r="1.5" fill="#9ba56b"/><circle cx="22" cy="17" r="1.5" fill="#87975e"/>
+  </g>
+  <g transform="translate(160)">
+    <rect width="32" height="32" fill="#647b50"/>
+    <path d="M2 8h13v8H2zm15 0h13v8H17zM2 18h13v9H2zm15 0h13v9H17z" fill="#82745e" stroke="#514a3c" stroke-width="1"/>
+    <path d="M5 11h7m9 0h7M5 21h7m9 0h7" stroke="#b09a72" stroke-width="1"/>
+    <path d="M0 31h32" stroke="#455d40"/>
+  </g>
+</svg>
