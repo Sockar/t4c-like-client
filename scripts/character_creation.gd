@@ -64,6 +64,7 @@ var _question_label: Label
 var _progress_label: Label
 var _choices_box: VBoxContainer
 var _summary_box: VBoxContainer
+var _error_label: Label
 
 
 func _ready() -> void:
@@ -120,6 +121,11 @@ func _build_interface() -> void:
 	_summary_box = VBoxContainer.new()
 	_summary_box.add_theme_constant_override("separation", 8)
 	layout.add_child(_summary_box)
+
+	_error_label = Label.new()
+	_error_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	_error_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	layout.add_child(_error_label)
 
 	var footer := HBoxContainer.new()
 	footer.alignment = BoxContainer.ALIGNMENT_CENTER
@@ -197,4 +203,10 @@ func _on_confirm_pressed() -> void:
 	if _question_index < QUESTIONS.size():
 		return
 	GameSession.attributes = _attributes.duplicate()
+	var error: Error = NetworkClient.connect_to_server(
+		GameSession.server_address, GameSession.character_name, GameSession.attributes
+	)
+	if error != OK:
+		_error_label.text = "Could not start server connection: %s" % error_string(error)
+		return
 	get_tree().change_scene_to_file("res://scenes/game.tscn")
