@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="32" viewBox="0 0 192 32">
+  <g>
+    <ellipse cx="16" cy="28" rx="8" ry="2.5" fill="#29382e" opacity=".45"/>
+    <path d="M10 22h5v6h-5zm8 0h5v6h-5z" fill="#513c2c"/>
+    <path d="M11 14q5-5 10 0l3 10q-8 4-16 0z" fill="#87533e" stroke="#49372b" stroke-width="1.2"/>
+    <path d="m12 16 4 3 4-3v7l-4 2-4-2z" fill="#b78955"/>
+    <path d="M11 13q-2 4-3 7l3 2 3-6m7-3q3 3 4 7l-3 2-3-6" fill="#c39a68" stroke="#49372b" stroke-width="1"/>
+    <circle cx="16" cy="9" r="6" fill="#d7b78b" stroke="#49372b" stroke-width="1"/>
+    <path d="M10 9q0-7 6-7t6 7l-3-2-4 1-4-1z" fill="#49372b"/>
+    <circle cx="14" cy="10" r=".7" fill="#302c25"/><circle cx="18" cy="10" r=".7" fill="#302c25"/>
+  </g>
+  <g transform="translate(32 0)">
+    <ellipse cx="16" cy="28" rx="8" ry="2.5" fill="#29382e" opacity=".45"/>
+    <path d="M10 22h5v6h-5zm8 1h5v6h-5z" fill="#513c2c"/>
+    <path d="M11 14q5-5 10 0l3 10q-8 4-16 0z" fill="#87533e" stroke="#49372b" stroke-width="1.2"/>
+    <path d="m12 16 4 3 4-3v7l-4 2-4-2z" fill="#b78955"/>
+    <path d="M11 13q-2 4-3 7l3 2 3-6m7-3q3 3 4 7l-3 2-3-6" fill="#c39a68" stroke="#49372b" stroke-width="1"/>
+    <circle cx="16" cy="9" r="6" fill="#d7b78b" stroke="#49372b" stroke-width="1"/>
+    <path d="M10 9q0-7 6-7t6 7l-3-2-4 1-4-1z" fill="#49372b"/>
+    <circle cx="14" cy="10" r=".7" fill="#302c25"/><circle cx="18" cy="10" r=".7" fill="#302c25"/>
+  </g>
+  <g transform="translate(64 0)">
+    <ellipse cx="16" cy="28" rx="8" ry="2.5" fill="#29382e" opacity=".45"/>
+    <path d="M8 22h6v6H9zm10 2h6v5h-6z" fill="#513c2c"/>
+    <path d="M11 14q5-5 10 0l3 10q-8 4-16 0z" fill="#87533e" stroke="#49372b" stroke-width="1.2"/>
+    <path d="m12 16 4 3 4-3v7l-4 2-4-2z" fill="#b78955"/>
+    <path d="M11 13q-2 4-3 7l3 2 3-6m7-3q3 3 4 7l-3 2-3-6" fill="#c39a68" stroke="#49372b" stroke-width="1"/>
+    <circle cx="16" cy="9" r="6" fill="#d7b78b" stroke="#49372b" stroke-width="1"/>
+    <path d="M10 9q0-7 6-7t6 7l-3-2-4 1-4-1z" fill="#49372b"/>
+    <circle cx="14" cy="10" r=".7" fill="#302c25"/><circle cx="18" cy="10" r=".7" fill="#302c25"/>
+  </g>
+  <g transform="translate(96 0)">
+    <ellipse cx="16" cy="28" rx="8" ry="2.5" fill="#29382e" opacity=".45"/>
+    <path d="M9 22h6v6h-6zm9 1h6v6h-6z" fill="#513c2c"/>
+    <path d="M11 14q5-5 10 0l3 10q-8 4-16 0z" fill="#87533e" stroke="#49372b" stroke-width="1.2"/>
+    <path d="m12 16 4 3 4-3v7l-4 2-4-2z" fill="#b78955"/>
+    <path d="M11 13q-2 4-3 7l3 2 3-6m7-3q3 3 4 7l-3 2-3-6" fill="#c39a68" stroke="#49372b" stroke-width="1"/>
+    <circle cx="16" cy="9" r="6" fill="#d7b78b" stroke="#49372b" stroke-width="1"/>
+    <path d="M10 9q0-7 6-7t6 7l-3-2-4 1-4-1z" fill="#49372b"/>
+    <circle cx="14" cy="10" r=".7" fill="#302c25"/><circle cx="18" cy="10" r=".7" fill="#302c25"/>
+  </g>
+  <g transform="translate(128 0)">
+    <ellipse cx="16" cy="28" rx="8" ry="2.5" fill="#29382e" opacity=".45"/>
+    <path d="M10 23h5v6h-5zm8-1h5v6h-5z" fill="#513c2c"/>
+    <path d="M11 14q5-5 10 0l3 10q-8 4-16 0z" fill="#87533e" stroke="#49372b" stroke-width="1.2"/>
+    <path d="m12 16 4 3 4-3v7l-4 2-4-2z" fill="#b78955"/>
+    <path d="M11 13q-2 4-3 7l3 2 3-6m7-3q3 3 4 7l-3 2-3-6" fill="#c39a68" stroke="#49372b" stroke-width="1"/>
+    <circle cx="16" cy="9" r="6" fill="#d7b78b" stroke="#49372b" stroke-width="1"/>
+    <path d="M10 9q0-7 6-7t6 7l-3-2-4 1-4-1z" fill="#49372b"/>
+    <circle cx="14" cy="10" r=".7" fill="#302c25"/><circle cx="18" cy="10" r=".7" fill="#302c25"/>
+  </g>
+  <g transform="translate(160 0)">
+    <ellipse cx="16" cy="28" rx="8" ry="2.5" fill="#29382e" opacity=".45"/>
+    <path d="M8 22h6v6H9zm10 2h6v5h-6z" fill="#513c2c"/>
+    <path d="M11 14q5-5 10 0l3 10q-8 4-16 0z" fill="#87533e" stroke="#49372b" stroke-width="1.2"/>
+    <path d="m12 16 4 3 4-3v7l-4 2-4-2z" fill="#b78955"/>
+    <path d="M11 13q-2 4-3 7l3 2 3-6m7-3q3 3 4 7l-3 2-3-6" fill="#c39a68" stroke="#49372b" stroke-width="1"/>
+    <circle cx="16" cy="9" r="6" fill="#d7b78b" stroke="#49372b" stroke-width="1"/>
+    <path d="M10 9q0-7 6-7t6 7l-3-2-4 1-4-1z" fill="#49372b"/>
+    <circle cx="14" cy="10" r=".7" fill="#302c25"/><circle cx="18" cy="10" r=".7" fill="#302c25"/>
+  </g>
+</svg>

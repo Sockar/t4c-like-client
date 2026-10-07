@@ -1,6 +1,6 @@
 # Ashen Vale client
 
-A Godot 4 client-side MMORPG skeleton using original placeholder visuals and setting. This is an independent project inspired by classic 2D fantasy RPGs; it does not reproduce or include original game assets or text.
+A Godot 4 client-side MMORPG skeleton with original vector art and setting. This is an independent project inspired by classic 2D fantasy RPGs; it does not reproduce or include original game assets or text.
 
 ## Requirements and launch
 
@@ -14,8 +14,8 @@ For standalone builds, install the matching Godot export templates, then use **P
 ## Scene flow
 
 1. **Login / Connect** — enter a WebSocket server URL (`ws://` or `wss://`) and character name. The client starts a connection attempt and opens character creation.
-2. **Character creation** — answer five original multiple-choice questions. Each question has four attribute-specific choices (Power, Agility, Endurance, Insight) and one neutral choice. **Reroll Questionnaire** restarts the sequence and clears its attribute totals. Confirming stores the summary and opens the game.
-3. **In game** — move the placeholder character with arrow keys or WASD. The screen includes a tile-based placeholder map, HP/MP bars, local chat input, and an empty satchel panel.
+2. **Character creation** — answer five original multiple-choice questions. Each question has four attribute-specific choices (`power`, `agility`, `endurance`, `insight`) and one neutral choice. **Reroll Questionnaire** restarts the sequence and clears its attribute totals. Confirming stores the summary and opens the game.
+3. **In game** — move the animated wayfarer with arrow keys or WASD. The single explorable zone is a 64×48 tile map with winding roads, a pond, old stone ruins, scattered trees, and TileMap obstacle collisions. A smoothing camera follows the player. The HUD has local exported HP/MP stats, a 12-slot satchel, chat input, a dialogue preview panel, and Attack / Fire Bolt / Heal buttons that only log the click.
 
 The login screen is usable without a running server. Network connection status and server-side character creation are intentionally stubbed while the client and server protocol is developed in parallel.
 
@@ -43,4 +43,8 @@ The client sends `client_hello` once the WebSocket reaches the open state. In-ga
 }
 ```
 
-Incoming messages with the same `{ "type": "...", "payload": { ... } }` shape are logged for now; gameplay protocol handling is not implemented. The shared `NetworkClient.send_message(type, payload)` method is available for later message types.
+Incoming messages with the same `{ "type": "...", "payload": { ... } }` shape are logged for now; gameplay protocol handling is not implemented. The shared `NetworkClient.send_message(type, payload)` method is available for later message types. Combat, spellcasting, dialogue, and quest UI actions are local previews only until the server protocol is finalized.
+
+## Original art
+
+All art in `assets/` is original project-created SVG: the six-cell terrain atlas, six-frame wayfarer sheet (idle and walk cycles), three action icons, and the empty inventory-slot icon. No third-party game assets are used.
