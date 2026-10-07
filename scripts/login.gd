@@ -77,10 +77,8 @@ func _on_connect_pressed() -> void:
 	if address.is_empty() or character_name.is_empty():
 		_error_label.text = "Enter a server address and character name."
 		return
-
-	var error: Error = NetworkClient.connect_to_server(address, character_name)
-	if error != OK:
-		_error_label.text = "Could not start the connection: %s" % error_string(error)
+	if not address.begins_with("ws://") and not address.begins_with("wss://"):
+		_error_label.text = "Server address must begin with ws:// or wss://."
 		return
 
 	GameSession.server_address = address
