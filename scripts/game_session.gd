@@ -3,8 +3,8 @@ extends Node
 var server_address := ""
 var character_name := ""
 var attributes := {
-	"Power": 0,
-	"Agility": 0,
-	"Endurance": 0,
-	"Insight": 0,
+	"power": 0,
+	"agility": 0,
+	"endurance": 0,
+	"insight": 0,
 }

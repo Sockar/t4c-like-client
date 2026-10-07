@@ -5,10 +5,10 @@ const QUESTIONS := [
 		"prompt": "A storm closes in as you travel. What do you do?",
 		"choices":
 		[
-			{"text": "Shoulder through the wind and keep moving.", "attribute": "Power"},
-			{"text": "Find a narrow trail sheltered by the trees.", "attribute": "Agility"},
-			{"text": "Make camp and wait for the worst to pass.", "attribute": "Endurance"},
-			{"text": "Read the clouds to predict how long it will last.", "attribute": "Insight"},
+			{"text": "Shoulder through the wind and keep moving.", "attribute": "power"},
+			{"text": "Find a narrow trail sheltered by the trees.", "attribute": "agility"},
+			{"text": "Make camp and wait for the worst to pass.", "attribute": "endurance"},
+			{"text": "Read the clouds to predict how long it will last.", "attribute": "insight"},
 			{"text": "Follow the main road at an easy pace.", "attribute": ""},
 		],
 	},
@@ -16,10 +16,10 @@ const QUESTIONS := [
 		"prompt": "You find a sealed chest in an abandoned waystation.",
 		"choices":
 		[
-			{"text": "Force the old lock with a sturdy tool.", "attribute": "Power"},
-			{"text": "Work the delicate mechanism carefully.", "attribute": "Agility"},
-			{"text": "Carry it to town without opening it.", "attribute": "Endurance"},
-			{"text": "Look for marks that reveal its maker.", "attribute": "Insight"},
+			{"text": "Force the old lock with a sturdy tool.", "attribute": "power"},
+			{"text": "Work the delicate mechanism carefully.", "attribute": "agility"},
+			{"text": "Carry it to town without opening it.", "attribute": "endurance"},
+			{"text": "Look for marks that reveal its maker.", "attribute": "insight"},
 			{"text": "Leave it where it is and continue onward.", "attribute": ""},
 		],
 	},
@@ -27,10 +27,10 @@ const QUESTIONS := [
 		"prompt": "A traveler asks for help crossing a flooded stream.",
 		"choices":
 		[
-			{"text": "Brace against the current and guide them across.", "attribute": "Power"},
-			{"text": "Find a line of stepping stones upstream.", "attribute": "Agility"},
-			{"text": "Build a simple bridge from fallen branches.", "attribute": "Endurance"},
-			{"text": "Study the current and choose a safe crossing.", "attribute": "Insight"},
+			{"text": "Brace against the current and guide them across.", "attribute": "power"},
+			{"text": "Find a line of stepping stones upstream.", "attribute": "agility"},
+			{"text": "Build a simple bridge from fallen branches.", "attribute": "endurance"},
+			{"text": "Study the current and choose a safe crossing.", "attribute": "insight"},
 			{"text": "Point them toward the nearby ferry.", "attribute": ""},
 		],
 	},
@@ -38,10 +38,10 @@ const QUESTIONS := [
 		"prompt": "At a quiet village gathering, where do you spend your time?",
 		"choices":
 		[
-			{"text": "Help raise a new beam for the meeting hall.", "attribute": "Power"},
-			{"text": "Join the nimble-footed dancers.", "attribute": "Agility"},
-			{"text": "Share stories beside the evening fire.", "attribute": "Endurance"},
-			{"text": "Listen to the elders' tales of the valley.", "attribute": "Insight"},
+			{"text": "Help raise a new beam for the meeting hall.", "attribute": "power"},
+			{"text": "Join the nimble-footed dancers.", "attribute": "agility"},
+			{"text": "Share stories beside the evening fire.", "attribute": "endurance"},
+			{"text": "Listen to the elders' tales of the valley.", "attribute": "insight"},
 			{"text": "Enjoy the meal and the company.", "attribute": ""},
 		],
 	},
@@ -49,10 +49,10 @@ const QUESTIONS := [
 		"prompt": "You discover an unfamiliar symbol carved in stone.",
 		"choices":
 		[
-			{"text": "Trace its deep grooves with a firm hand.", "attribute": "Power"},
-			{"text": "Sketch its precise lines in your journal.", "attribute": "Agility"},
-			{"text": "Mark the location and return with supplies.", "attribute": "Endurance"},
-			{"text": "Compare it with symbols you have studied.", "attribute": "Insight"},
+			{"text": "Trace its deep grooves with a firm hand.", "attribute": "power"},
+			{"text": "Sketch its precise lines in your journal.", "attribute": "agility"},
+			{"text": "Mark the location and return with supplies.", "attribute": "endurance"},
+			{"text": "Compare it with symbols you have studied.", "attribute": "insight"},
 			{"text": "Remember the place and carry on.", "attribute": ""},
 		],
 	},
@@ -140,10 +140,10 @@ func _build_interface() -> void:
 func _restart_questionnaire() -> void:
 	_question_index = 0
 	_attributes = {
-		"Power": 0,
-		"Agility": 0,
-		"Endurance": 0,
-		"Insight": 0,
+		"power": 0,
+		"agility": 0,
+		"endurance": 0,
+		"insight": 0,
 	}
 
 
@@ -183,7 +183,7 @@ func _show_summary() -> void:
 	_summary_box.visible = true
 	for attribute in _attributes:
 		var stat := Label.new()
-		stat.text = "%s: %d" % [attribute, _attributes[attribute]]
+		stat.text = "%s: %d" % [attribute.capitalize(), _attributes[attribute]]
 		stat.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		_summary_box.add_child(stat)
 
